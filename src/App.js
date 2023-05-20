@@ -20,10 +20,10 @@ function App() {
     // }
 
     const checkEmail = async (email) => {
-        const apiKey = 'YOUR_API_KEY';
         const url = `https://api.zerobounce.net/v2/validate?api_key=${ZERO_BOUNCE_API_KEY}&email=${email}`;
         const response = await axios.get(url);
         const data = response.data;
+        console.log(data);
         return data.status === 'Valid';
     }
 
