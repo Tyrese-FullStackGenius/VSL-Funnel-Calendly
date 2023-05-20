@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import {notification} from 'antd';
+import validator from 'email-validator';
 import Home from './components/Home';
 import Content from './components/Content';
 import Schedule from './components/Schedule';
@@ -8,7 +10,6 @@ function App() {
     const [currentPage, setCurrentPage] = useState('Home');
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     return (
         <div>
@@ -18,11 +19,25 @@ function App() {
                     : currentPage === 'Schedule' ?
                         <Schedule backAction={() => setCurrentPage('Content')} username={username} email={email} />
                         : <Home goAction={() => {
-                            if (!emailRegex.test(email)) {
-                                alert('Please enter a valid email address')
-                            } else {
-                                setCurrentPage('Content');
+                            if (!username) {
+                                notification.warning({
+                                    message: 'Please enter your name!'
+                                });
+                                return;
                             }
+                            if (!email) {
+                                notification.warning({
+                                    message: 'Please enter your email!'
+                                });
+                                return;
+                            }
+                            if (!validator.validate(email)) {
+                                notification.warning({
+                                    message: 'Please enter a real email address!'
+                                });
+                                return;
+                            }
+                            setCurrentPage('Content');
                         }} setUsername={setUsername} setEmail={setEmail} username={username} email={email} />
             }
         </div>
