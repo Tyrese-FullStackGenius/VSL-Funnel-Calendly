@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Image, Button } from 'antd';
+import { Row, Col, Button } from 'antd';
 import { InlineWidget } from 'react-calendly';
 import LOGO from '../assets/logo.png';
 import { CALENDLY_LINK } from '../const/constants';
@@ -9,7 +9,7 @@ function Schedule(props) {
         <Row style={{ width: '100vw', background: '#F2F3F7', overflowY: 'auto' }}>
             <Col md={{ span: 16, offset: 4 }} sm={{ span: 20, offset: 2 }} xs={{ span: 22, offset: 1 }}>
                 <div style={{ textAlign: 'center' }}>
-                    <Image src={LOGO} style={{ margin: '12px 0' }} />
+                    <img alt='' src={LOGO} style={{ margin: '12px 0' }} />
                 </div>
 
                 <InlineWidget

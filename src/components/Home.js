@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Button, Row, Col, Input, List, Image } from 'antd';
+import { Typography, Button, Row, Col, Input, List } from 'antd';
 import { FOOTER_TEXT } from '../const/constants';
 import LOGO from '../assets/logo.png';
 import PIC1 from '../assets/pic1.png';
@@ -10,7 +10,7 @@ function Home(props) {
         <Row style={{ height: '100vh', width: '100vw', background: '#F2F3F7', overflowY: 'auto' }}>
             <Col md={{ span: 16, offset: 4 }} sm={{ span: 20, offset: 2 }} xs={{ span: 22, offset: 1 }}>
                 <div style={{ textAlign: 'center' }}>
-                    <Image src={LOGO} style={{ margin: '12px 0' }} />
+                    <img alt='' src={LOGO} style={{ margin: '12px 0' }} />
                     <Typography.Title level={2} style={{ margin: '12px 0', padding: '12px', background: '#D22DE3', borderRadius: '10px', color: '#FFFFFF' }}>Free Training Reveals:</Typography.Title>
                     <Typography.Title level={2} style={{ margin: '12px 0', padding: '0' }}>How you can become an elite media buyer, and land a remote job making up to €100k/year in less than 60 days.</Typography.Title>
                     <Typography.Title level={3} style={{ margin: '12px 0', padding: '0' }}>(No Experience Required)</Typography.Title>
@@ -19,7 +19,7 @@ function Home(props) {
                 <Row>
                     <Col md={{ span: 10, offset: 0 }} sm={{ span: 11, offset: 0 }} xs={{ span: 24, offset: 0 }}>
                         <div>
-                            <Image src={PIC1} style={{ width: '100%' }} />
+                            <img alt='' src={PIC1} style={{ width: '100%' }} />
                         </div>
                         <List
                             dataSource={[
@@ -32,7 +32,7 @@ function Home(props) {
                     </Col>
                     <Col md={{ span: 10, offset: 4 }} sm={{ span: 11, offset: 2 }} xs={{ span: 24, offset: 0 }}>
                         <div>
-                            <Image src={PIC2} style={{ width: '100%' }} />
+                            <img alt='' src={PIC2} style={{ width: '100%' }} />
                         </div>
                         <List
                             dataSource={[
@@ -78,7 +78,7 @@ function Home(props) {
                 </Row>
 
                 <div style={{ textAlign: 'center' }}>
-                    <Image src={LOGO} style={{ margin: '12px 0' }} />
+                    <img alt='' src={LOGO} style={{ margin: '12px 0' }} />
                     <Typography.Title level={4} style={{ margin: '12px 0', padding: '0' }}>{FOOTER_TEXT}</Typography.Title>
                 </div>
             </Col>

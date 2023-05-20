@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Image, Button } from 'antd';
+import { Row, Col, Button } from 'antd';
 import { Player } from 'video-react';
 import LOGO from '../assets/logo.png';
 import 'video-react/dist/video-react.css';
@@ -9,7 +9,7 @@ function Content(props) {
         <Row style={{ height: '100vh', width: '100vw', background: '#F2F3F7', overflowY: 'auto' }}>
             <Col md={{ span: 16, offset: 4 }} sm={{ span: 20, offset: 2 }} xs={{ span: 22, offset: 1 }}>
                 <div style={{ textAlign: 'center' }}>
-                    <Image src={LOGO} style={{ margin: '12px 0' }} />
+                    <img alt='' src={LOGO} style={{ margin: '12px 0' }} />
                 </div>
 
                 <Player>
