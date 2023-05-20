@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Button, Row, Col, Input, List, Image } from 'antd';
+import { FOOTER_TEXT } from '../const/constants';
 import LOGO from '../assets/logo.png';
 import PIC1 from '../assets/pic1.png';
 import PIC2 from '../assets/pic2.png';
@@ -78,7 +79,7 @@ function Home(props) {
 
                 <div style={{ textAlign: 'center' }}>
                     <Image src={LOGO} style={{ margin: '12px 0' }} />
-                    <Typography.Title level={4} style={{ margin: '12px 0', padding: '0' }}>privacy policy | terms of service</Typography.Title>
+                    <Typography.Title level={4} style={{ margin: '12px 0', padding: '0' }}>{FOOTER_TEXT}</Typography.Title>
                 </div>
             </Col>
         </Row>

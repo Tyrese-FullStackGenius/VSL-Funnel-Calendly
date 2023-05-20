@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import {notification} from 'antd';
+import { notification } from 'antd';
 import validator from 'email-validator';
 import Home from './components/Home';
 import Content from './components/Content';
 import Schedule from './components/Schedule';
-import './App.css';
 
 function App() {
     const [currentPage, setCurrentPage] = useState('Home');

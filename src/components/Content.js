@@ -17,7 +17,7 @@ function Content(props) {
                 </Player>
 
                 <Row>
-                    <Col md={{span: 10, offset: 0}} sm={{ span: 11, offset: 0 }} xs={{ span: 11, offset: 0 }}>
+                    <Col md={{ span: 10, offset: 0 }} sm={{ span: 11, offset: 0 }} xs={{ span: 11, offset: 0 }}>
                         <Button
                             type='primary'
                             style={{ background: '#D22DE3', color: '#FFFFFF', margin: '8px 0', padding: '12px', height: '48px', width: '100%' }}
@@ -26,7 +26,7 @@ function Content(props) {
                             BACK
                         </Button>
                     </Col>
-                    <Col md={{span: 10, offset: 4}} sm={{ span: 11, offset: 2 }} xs={{ span: 11, offset: 2 }}>
+                    <Col md={{ span: 10, offset: 4 }} sm={{ span: 11, offset: 2 }} xs={{ span: 11, offset: 2 }}>
                         <Button
                             type='primary'
                             style={{ background: '#D22DE3', color: '#FFFFFF', margin: '8px 0', padding: '12px', height: '48px', width: '100%' }}
